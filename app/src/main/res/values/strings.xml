@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">M2</string>
+    <string name="name_string">Name</string>
+    <string name="telefone_string">Telefone</string>
+    <string name="email_string">Email</string>
+    <string name="idade_string">Idade</string>
+    <string name="peso_string">Peso</string>
+    <string name="altura_string">Altura</string>
+    <string name="button_name">Enviar</string>
+</resources>
