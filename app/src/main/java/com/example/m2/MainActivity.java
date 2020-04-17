@@ -42,6 +42,37 @@ public class MainActivity extends AppCompatActivity {
         String Peso = editTextPeso.getText().toString();
         String Altura = editTextAltura.getText().toString();
 
+        if (Nome.length()<1){
+            editTextName.setError("Preencha o nome");
+            editTextName.requestFocus();
+            return;
+        }
+        if (Telefone.length()<=0){
+            editTextTelefone.setError("Preencha o Telefone");
+            editTextTelefone.requestFocus();
+            return;
+        }
+        if (Email.length()<1){
+            editTextEmail.setError("Preencha o Email");
+            editTextEmail.requestFocus();
+            return;
+        }
+        if (Idade.length()<=0){
+            editTextIdade.setError("Preencha o Idade");
+            editTextIdade.requestFocus();
+            return;
+        }
+        if (Peso.length()<=0){
+            editTextPeso.setError("Preencha o Peso");
+            editTextPeso.requestFocus();
+            return;
+        }
+        if (Altura.length()<=0){
+            editTextAltura.setError("Preencha o Altura");
+            editTextAltura.requestFocus();
+            return;
+        }
+
         intent.putExtra(EXTRA_MESSAGE_NOME, Nome);
         intent.putExtra(EXTRA_MESSAGE_TELEFONE, Telefone);
         intent.putExtra(EXTRA_MESSAGE_EMAIL, Email);
